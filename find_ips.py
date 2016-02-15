@@ -1,6 +1,6 @@
 import os
 import re
-
+if not os.path.exists('out.txt'): open('out.txt', 'x').close()
 with open('out.txt', 'w') as out_file:
     for file in os.listdir():
         temp_list = []
